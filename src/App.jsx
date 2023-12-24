@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 function App() {
-	const apiKey = "ff84a25df0574384b7b141848231912";
+	const xyz = "ff84a25df0574384b7b141848231912";
 
 	const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -146,7 +146,7 @@ function App() {
 	const currentWeather = async () => {
 		const options = {
 			method: "GET",
-			url: `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${locationName}&aqi=yes`,
+			url: `https://api.weatherapi.com/v1/current.json?key=${xyz}&q=${locationName}&aqi=yes`,
 			headers: { accept: "application/json" },
 		};
 
@@ -164,7 +164,7 @@ function App() {
 	const currentWeakWeather = async () => {
 		const options = {
 			method: "GET",
-			url: `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${locationName}&days=6&aqi=yes&alerts=no`,
+			url: `https://api.weatherapi.com/v1/forecast.json?key=${xyz}&q=Rangpur&days=6&aqi=yes&alerts=no`,
 			headers: { accept: "application/json" },
 		};
 
@@ -783,6 +783,9 @@ function App() {
 }
 
 export default App;
+
+
+
 
 
 
