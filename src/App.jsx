@@ -699,7 +699,12 @@ function App() {
 														key={index}
 														className={`flex flex-col snap-center  items-center justify-center w-12  rounded-full `}
 														data-hour={hour}>
-														<span>
+														<span
+															className={`${
+																hour === new Date().getHours()
+																	? "underline"
+																	: ""
+															} `}>
 															{displayHour}
 															{period}
 														</span>
@@ -738,7 +743,7 @@ function App() {
 											return (
 												<div
 													key={index}
-													className="flex justify-between items-center">
+													className="flex justify-between items-center px-3">
 													<DayName dateStr={data.date} />
 													<div className="w-1/2 flex justify-center">
 														<img
@@ -783,6 +788,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
