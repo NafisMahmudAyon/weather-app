@@ -661,7 +661,7 @@ function App() {
 										</span>
 									)}
 								</div>
-								<div className="w-[max-content] relative text-right rounded-full border border-gray-950 inline-block p-2 after:absolute after:content[''] after:h-full after:w-[2px] after:top-0 after:bg-gray-950 after:left-1/2 dark:after:bg-slate-200 dark:border-slate-200 ">
+								<div className="w-[max-content] relative text-right rounded-full border-[2px] border-gray-950 inline-block p-2 after:absolute after:content[''] after:h-full after:w-[2px] after:top-0 after:bg-gray-950 after:left-1/2 dark:after:bg-slate-200 dark:border-slate-200 ">
 									<span
 										className={` p-2 pr-3 ${celsius ? "" : ""}  `}
 										onClick={() => setCelsius(true)}>
